@@ -1,3 +1,20 @@
+# simple kye value
+person:
+  name: jj
+  age: 23
+  city: Hyderabd
+  school: abc_school
+  hobbies:
+    - cooking
+    - cycling
+  hobbies2: [cooking, cycling]
+  friends:
+    - name: friend1
+      age: 23
+    - name: friend2
+      age: 22
+--- # document separator
+
 # Simple Key value Pairs
 person: # Dictionary
   name: kalyan
