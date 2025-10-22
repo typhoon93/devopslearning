@@ -1,0 +1,1 @@
+This folder can be run locally as long as you have minikube cluster.
