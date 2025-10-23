@@ -5,8 +5,9 @@ metadata:
 spec: 
   accessModes:
     - ReadWriteOnce
-  storageClassName: ebs-sc
-  resources: 
+#  storageClassName: ebs-sc
+  storageClassName: standard # for minikube, local
+  resources:
     requests:
       storage: 4Gi
 
