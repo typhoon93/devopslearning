@@ -5,3 +5,4 @@
 *.tfstate.backup
 .terraform.lock.hcl
 *.pem
+/courses/terraform-on-aws-eks/to-do
