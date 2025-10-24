@@ -1,7 +1,7 @@
-# # Resource: Kubernetes Service Manifest (Type: NodePort)
-# resource "kubernetes_service_v1" "nodeport_service" {
+# # Resource: Kubernetes Service Manifest (Type: Load Balancer - Classic)
+# resource "kubernetes_service_v1" "lb_service" {
 #   metadata {
-#     name = "usermgmt-webapp-nodeport-service"
+#     name = "usermgmt-webapp-clb-service"
 #   }
 #   spec {
 #     selector = {
@@ -10,9 +10,7 @@
 #     port {
 #       port        = 80
 #       target_port = 8080
-#       node_port = 31280
 #     }
-#
-#     type = "NodePort"
+#     type = "LoadBalancer"
 #   }
 # }
