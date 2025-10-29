@@ -17,11 +17,11 @@ resource "kubernetes_ingress_v1" "ingress" {
       "alb.ingress.kubernetes.io/success-codes" = 200
       "alb.ingress.kubernetes.io/healthy-threshold-count" = 2
       "alb.ingress.kubernetes.io/unhealthy-threshold-count" = 2
-    }    
+    }
   }
 
   spec {
-    ingress_class_name = "my-aws-ingress-class" # Ingress Class            
+    ingress_class_name = "nginx" # Ingress Class
     default_backend {
       service {
         name = kubernetes_service_v1.myapp3_np_service.metadata[0].name
