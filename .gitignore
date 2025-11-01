@@ -6,3 +6,5 @@
 .terraform.lock.hcl
 *.pem
 /courses/terraform-on-aws-eks/to-do
+*.crt
+*.key
