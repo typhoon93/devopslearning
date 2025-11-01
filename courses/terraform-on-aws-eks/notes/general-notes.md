@@ -59,3 +59,6 @@ terraform plan
 terraform apply
 terraform output
 ```
+
+# Helm
+Helm is a package manager for k8s. Think of it like PIP.
