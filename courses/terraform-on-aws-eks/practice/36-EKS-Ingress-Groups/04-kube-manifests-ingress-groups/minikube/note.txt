@@ -1,0 +1,1 @@
+minikube version does not create a LB, so that grouping behaviour is not demoed here. Create tthe cluster in EKS to check that.
