@@ -62,3 +62,8 @@ terraform output
 
 # Helm
 Helm is a package manager for k8s. Think of it like PIP.
+
+# K8s, Aws, TF
+
+- ALB Ingress Target type:  IP mode, it will route traffic directly to the pod; required in STICKY sessions to work with ALBs
+  - "...io/target-type: ip"
