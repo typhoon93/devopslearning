@@ -67,3 +67,11 @@ Helm is a package manager for k8s. Think of it like PIP.
 
 - ALB Ingress Target type:  IP mode, it will route traffic directly to the pod; required in STICKY sessions to work with ALBs
   - "...io/target-type: ip"
+
+## EFS CSI Driver
+- efs needs to be created first, then the EFS csi driver can use it k8s
+  - Ensure the EFS has mount targets in each AZ your EKS nodes run in.
+  - Pass the filesystem ID into your PersistentVolume or StorageClass definition.
+  - efs is created through your tf configs
+  - k8s pvc and storage class: the size of the volume does not effect the actual usable space in EFS (as it is elastic) so we only set it because it is required by the template of 
+- this is in contrast to EBS that could be created automatically by its driver.
