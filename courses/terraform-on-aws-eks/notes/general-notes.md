@@ -74,4 +74,5 @@ Helm is a package manager for k8s. Think of it like PIP.
   - Pass the filesystem ID into your PersistentVolume or StorageClass definition.
   - efs is created through your tf configs
   - k8s pvc and storage class: the size of the volume does not effect the actual usable space in EFS (as it is elastic) so we only set it because it is required by the template of 
+- Dynamic provisioning: uses a PVC; we do not need to create a PV first manually. On the other hand, STORAGE CLASS has additonal params that need to be filled. 
 - this is in contrast to EBS that could be created automatically by its driver.
