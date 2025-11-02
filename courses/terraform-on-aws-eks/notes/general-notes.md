@@ -82,3 +82,8 @@ Helm is a package manager for k8s. Think of it like PIP.
   - hpa needs a k8s metric server to verify usage
   - scaling happens when cpu utilization percentage we set is reached
   - you can use `kubectl top pod` to get utilization 
+- Vertical pod autoscaler (VPA) - increases cpu / memory utilization of resources in the pod
+  - the pod is evicted and a new pod crated with the VPA recommended settings
+  - we do not scale the replica count, just the mem / cpu usage of the replicas
+  - all change in resources creates a new pod
+- you should only use VPA or HPA, not both, as their actions may clash.
